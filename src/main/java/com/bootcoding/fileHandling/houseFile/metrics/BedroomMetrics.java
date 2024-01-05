@@ -17,7 +17,7 @@ public class BedroomMetrics implements  MetricCollector{
      */
     @Override
     public void collect(List<House> data) {
-        //bedrooms size = 5
+        //bedrooms size = 4
         Map<Integer, List<House>> bedrooms = data.stream().collect(Collectors.groupingBy(House::getBedrooms));
 
         bedrooms.forEach((k,v) -> System.out.println(k + " BHK: " + v.size()));
