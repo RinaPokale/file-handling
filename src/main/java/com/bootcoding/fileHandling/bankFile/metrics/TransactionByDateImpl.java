@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class TransactionByDateImpl implements TransactionByDate{
     @Override
@@ -38,24 +37,5 @@ public class TransactionByDateImpl implements TransactionByDate{
 
 }
 
-//    public List<House> getHouse(List<House> houses, int bSize){
-//        return houses.stream().filter(h -> h.getBedrooms() == bSize)
-//                .collect(Collectors.toList());
-//    }
-
-
-//    Note:- just method name is different otherwise functionality is same of both methods
-    /*
-     private static List<House> collectNbhkData(List<House> houses, int bSize){
-        List<House> houseNbhk = new ArrayList<>();
-        for(int i = 0; i < houses.size(); i++){
-            if(houses.get(i).getBedrooms()==bSize){
-                houseNbhk.add(houses.get(i));
-            }
-        }
-        return houseNbhk;
-    }
-
-     */
 
 
