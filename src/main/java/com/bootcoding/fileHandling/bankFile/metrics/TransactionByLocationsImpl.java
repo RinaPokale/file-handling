@@ -12,17 +12,14 @@ public class TransactionByLocationsImpl implements TransactionByLocations{
          Map<String, List<BankTransaction>> groupOfCity = transactions.stream().
                  collect(Collectors.groupingBy(BankTransaction::getLocation));
 
-
-        groupOfCity.forEach((c, records) -> {
-            if(c.equalsIgnoreCase(city)){
-                System.out.println(c + " " + records.size());
-            }
-        });
-
-//        groupOfCity.forEach((c, records) -> System.out.println(c.equalsIgnoreCase(city)? c + " " + records.size(): ""));
+        groupOfCity.forEach((c, records) -> System.out.println(c.equalsIgnoreCase(city)? c + " " + records.size(): ""));
 
         /*
-
+            groupOfCity.forEach((c, records) -> {
+             if(c.equalsIgnoreCase(city)){
+                 System.out.println(c + " " + records.size());
+             }
+         });
          */
 
     }
