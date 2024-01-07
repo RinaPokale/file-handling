@@ -16,7 +16,7 @@ public class DateUtils {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
         Date date = sdf.parse(dateStr);
-        System.out.println(date);
+//        System.out.println(date);
         return date;
     }
 
