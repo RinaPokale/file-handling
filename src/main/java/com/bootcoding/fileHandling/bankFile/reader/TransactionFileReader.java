@@ -42,7 +42,7 @@ public class TransactionFileReader {
             try{
                 return buildTransaction(row);
             }catch (Exception ex){
-                System.err.println(ex.getMessage() + " while processing : row: " + row);
+//                System.err.println(ex.getMessage() + " while processing : row: " + row);
                 return null;
             }
         }).filter(Objects::nonNull).collect(Collectors.toList());
