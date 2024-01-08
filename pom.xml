@@ -34,6 +34,19 @@
             <artifactId>itextpdf</artifactId>
             <version>5.5.13.2</version> <!-- Replace with the latest version -->
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>32.1.3-jre</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.1</version>
+        </dependency>
     </dependencies>
     
 </project>
