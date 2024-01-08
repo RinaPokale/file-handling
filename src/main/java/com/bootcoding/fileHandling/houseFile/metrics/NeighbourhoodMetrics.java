@@ -23,5 +23,6 @@ public class NeighbourhoodMetrics implements MetricCollector{
         return data.stream()
                 .filter(row -> condition.equalsIgnoreCase(row.getNeighborhood()))
                 .count();
+
     }
 }
