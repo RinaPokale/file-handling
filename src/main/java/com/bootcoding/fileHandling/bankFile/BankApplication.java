@@ -1,6 +1,6 @@
 package com.bootcoding.fileHandling.bankFile;
 
-import com.bootcoding.fileHandling.bankFile.metrics.TransactionByDateImpl;
+import com.bootcoding.fileHandling.bankFile.metrics.TransactionByLocationsImpl;
 import com.bootcoding.fileHandling.bankFile.model.BankTransaction;
 import com.bootcoding.fileHandling.bankFile.reader.TransactionFileReader;
 
@@ -15,10 +15,10 @@ public class BankApplication {
 //        MetricsCollector metricsCollector = new TransactionByGenderMetrics();
 //        metricsCollector.collect(bankTransaction);
 //
-//        TransactionByLocations transactionByLocation = new TransactionByLocations();
-//        transactionByLocation.collect(bankTransaction);
+        TransactionByLocationsImpl transactionByLocation = new TransactionByLocationsImpl();
+        transactionByLocation.collect(bankTransaction, "mumbai");
 
-        TransactionByDateImpl transactionByDate = new TransactionByDateImpl();
-        transactionByDate.collect(bankTransaction, 1960, 1970);
+//        TransactionByDateImpl transactionByDate = new TransactionByDateImpl();
+//        transactionByDate.collect(bankTransaction, 1960, 1970);
     }
 }
